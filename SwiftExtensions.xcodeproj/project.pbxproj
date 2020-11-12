@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C5E7A68255CF09B009CCA64 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E7A67255CF09B009CCA64 /* UIViewController+Extension.swift */; };
 		2C5E7A75255CFD66009CCA64 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E7A74255CFD66009CCA64 /* UIApplication+Extension.swift */; };
+		2C5E7A7A255CFEBB009CCA64 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E7A79255CFEBB009CCA64 /* TextFormatter.swift */; };
 		2CB7214E255C951C008BD3C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7214D255C951C008BD3C2 /* AppDelegate.swift */; };
 		2CB72152255C951C008BD3C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB72151255C951C008BD3C2 /* ViewController.swift */; };
 		2CB72157255C951E008BD3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB72156255C951E008BD3C2 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		17755151082251B8B516BA4A /* Pods-SwiftExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExtensions.debug.xcconfig"; path = "Target Support Files/Pods-SwiftExtensions/Pods-SwiftExtensions.debug.xcconfig"; sourceTree = "<group>"; };
 		2C5E7A67255CF09B009CCA64 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		2C5E7A74255CFD66009CCA64 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		2C5E7A79255CFEBB009CCA64 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
 		2CB7214A255C951C008BD3C2 /* SwiftExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB7214D255C951C008BD3C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB72151255C951C008BD3C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5E7A7E255CFEC2009CCA64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E7A67255CF09B009CCA64 /* UIViewController+Extension.swift */,
+				2C5E7A74255CFD66009CCA64 /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C5E7A7F255CFED1009CCA64 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E7A79255CFEBB009CCA64 /* TextFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2CB72141255C951C008BD3C2 = {
 			isa = PBXGroup;
 			children = (
@@ -102,13 +121,13 @@
 		2CB7214C255C951C008BD3C2 /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				2C5E7A7F255CFED1009CCA64 /* Helpers */,
+				2C5E7A7E255CFEC2009CCA64 /* Extensions */,
 				2CB7214D255C951C008BD3C2 /* AppDelegate.swift */,
 				2CB72151255C951C008BD3C2 /* ViewController.swift */,
 				2CB72156255C951E008BD3C2 /* Assets.xcassets */,
 				2CB72158255C951E008BD3C2 /* LaunchScreen.storyboard */,
 				2CB7215B255C951E008BD3C2 /* Info.plist */,
-				2C5E7A67255CF09B009CCA64 /* UIViewController+Extension.swift */,
-				2C5E7A74255CFD66009CCA64 /* UIApplication+Extension.swift */,
 			);
 			path = SwiftExtensions;
 			sourceTree = "<group>";
@@ -312,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5E7A7A255CFEBB009CCA64 /* TextFormatter.swift in Sources */,
 				2C5E7A68255CF09B009CCA64 /* UIViewController+Extension.swift in Sources */,
 				2CB72152255C951C008BD3C2 /* ViewController.swift in Sources */,
 				2C5E7A75255CFD66009CCA64 /* UIApplication+Extension.swift in Sources */,
