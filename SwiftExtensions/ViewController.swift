@@ -42,12 +42,13 @@ class ViewController: UIViewController {
         
         let text = "HelloYou"
         superscriptLabel.attributedText = TextFormatter.superscriptText(text: text,
-                                                                        font: UIFont(name: "Helvetica Neue", size: 16.0)!,
-                                                                        color: UIColor.black, superscriptRange: NSRange(location: text.count - 3, length: 3))
+                                                                        font: UIFont(name: "Helvetica Neue", size: 32.0)!,
+                                                                        color: UIColor.black,
+                                                                        superscriptRange: NSRange(location: text.count - 3, length: 3))
         stackView.addArrangedSubview(superscriptLabel)
         
         subscriptLabel.attributedText = TextFormatter.subscriptText(text: text,
-                                                                    font: UIFont(name: "Helvetica Neue", size: 16.0)!,
+                                                                    font: UIFont(name: "Helvetica Neue", size: 32.0)!,
                                                                     color: UIColor.black,
                                                                     subscriptRange: NSRange(location: text.count - 3, length: 3))
         stackView.addArrangedSubview(subscriptLabel)
