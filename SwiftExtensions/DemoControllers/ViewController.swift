@@ -22,7 +22,27 @@ class ViewController: UIViewController {
         return label
     }()
     
+    private let bottomsheetButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Bottom sheet", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        return button
+    }()
+    
     private let scrollView = UIScrollView()
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        setup()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setup() {
+        bottomsheetButton.addTarget(self, action: #selector(launchBottomSheet), for: .touchUpInside)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +71,15 @@ class ViewController: UIViewController {
                                                                     color: UIColor.black,
                                                                     subscriptRange: NSRange(location: text.count - 3, length: 3))
         stackView.addArrangedSubview(subscriptLabel)
+        stackView.addArrangedSubview(bottomsheetButton)
+    }
+    
+    @objc private func launchBottomSheet() {
+        let bottomSheetVC = BottomSheetController()
+        bottomSheetVC.modalPresentationStyle = .fullScreen
+        bottomSheetVC.closeAction = {
+            bottomSheetVC.dismiss(animated: true)
+        }
+        present(bottomSheetVC, animated: true)
     }
 }
-
