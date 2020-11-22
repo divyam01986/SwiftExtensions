@@ -15,6 +15,9 @@
 		2CB72157255C951E008BD3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB72156255C951E008BD3C2 /* Assets.xcassets */; };
 		2CB7215A255C951E008BD3C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB72158255C951E008BD3C2 /* LaunchScreen.storyboard */; };
 		2CBFAEBE255D024300C5A869 /* TextFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBFAEBD255D024300C5A869 /* TextFormatterTests.swift */; };
+		2CC774EB256B043800736A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7214D255C951C008BD3C2 /* AppDelegate.swift */; };
+		2CC774EE256B068D00736A68 /* BottomSheetHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC774ED256B068D00736A68 /* BottomSheetHost.swift */; };
+		2CC774F1256B1AE000736A68 /* BottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC774F0256B1AE000736A68 /* BottomSheetController.swift */; };
 		4066F542598E6204C7176183 /* Pods_SwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B970560FF8A0F0238F8E67 /* Pods_SwiftExtensions.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,8 @@
 		2CB72160255C951E008BD3C2 /* SwiftExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB72166255C951E008BD3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBFAEBD255D024300C5A869 /* TextFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatterTests.swift; sourceTree = "<group>"; };
+		2CC774ED256B068D00736A68 /* BottomSheetHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetHost.swift; sourceTree = "<group>"; };
+		2CC774F0256B1AE000736A68 /* BottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetController.swift; sourceTree = "<group>"; };
 		31B970560FF8A0F0238F8E67 /* Pods_SwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E59F8CF7EC84B75DDAF50FA /* Pods-SwiftExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftExtensions.release.xcconfig"; path = "Target Support Files/Pods-SwiftExtensions/Pods-SwiftExtensions.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,10 +110,11 @@
 		2CB7214C255C951C008BD3C2 /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				2CC774EF256B1ABE00736A68 /* DemoControllers */,
+				2CC774EC256B066B00736A68 /* Protocols */,
 				2C5E7A7F255CFED1009CCA64 /* Helpers */,
 				2C5E7A7E255CFEC2009CCA64 /* Extensions */,
 				2CB7214D255C951C008BD3C2 /* AppDelegate.swift */,
-				2CB72151255C951C008BD3C2 /* ViewController.swift */,
 				2CB72156255C951E008BD3C2 /* Assets.xcassets */,
 				2CB72158255C951E008BD3C2 /* LaunchScreen.storyboard */,
 				2CB7215B255C951E008BD3C2 /* Info.plist */,
@@ -123,6 +129,23 @@
 				2CBFAEBD255D024300C5A869 /* TextFormatterTests.swift */,
 			);
 			path = SwiftExtensionsTests;
+			sourceTree = "<group>";
+		};
+		2CC774EC256B066B00736A68 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2CC774ED256B068D00736A68 /* BottomSheetHost.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2CC774EF256B1ABE00736A68 /* DemoControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CB72151255C951C008BD3C2 /* ViewController.swift */,
+				2CC774F0256B1AE000736A68 /* BottomSheetController.swift */,
+			);
+			path = DemoControllers;
 			sourceTree = "<group>";
 		};
 		2F425C5CA31707977A1859DD /* Pods */ = {
@@ -286,11 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC774EE256B068D00736A68 /* BottomSheetHost.swift in Sources */,
 				2C5E7A7A255CFEBB009CCA64 /* TextFormatter.swift in Sources */,
 				2C5E7A68255CF09B009CCA64 /* UIViewController+Extension.swift in Sources */,
 				2CB72152255C951C008BD3C2 /* ViewController.swift in Sources */,
 				2C5E7A75255CFD66009CCA64 /* UIApplication+Extension.swift in Sources */,
 				2CB7214E255C951C008BD3C2 /* AppDelegate.swift in Sources */,
+				2CC774F1256B1AE000736A68 /* BottomSheetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC774EB256B043800736A68 /* AppDelegate.swift in Sources */,
 				2CBFAEBE255D024300C5A869 /* TextFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +473,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftExtensions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +494,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftExtensions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
